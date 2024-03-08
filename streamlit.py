@@ -52,7 +52,7 @@ with col1:
 # NeuralProphet model. The value entered by the user in this input field will be stored in the
 # variable `horiz`, which represents the prediction horizon.
 with col2:
-    horiz = st.number_input('Please specify the number of periods for which you would like to make a prediction:', min_value=0, step=1)
+    horiz = st.number_input('Please indicate the number of periods for which you would like to make a prediction.:', min_value=0, step=1)
     
 # The code block you provided is creating an expander in the Streamlit interface titled "Choose
 # Advanced Parameters" with a link to a guide on hyperparameter selection for NeuralProphet. Within

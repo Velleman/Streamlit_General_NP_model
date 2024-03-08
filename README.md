@@ -38,10 +38,13 @@ All used parameters can be found at the bottom of the page.
 
 Explanation of parameters [can be found here.](https://neuralprophet.com/how-to-guides/feature-guides/hyperparameter-selection.html)
 
-#### Required parameters.
+#### Required parameters
 
-- frequency. This parameters defines how you data would be formated before sending to the NeuralProphet Machine Learning model: 
+- frequency. This parameter defines how you data would be formated before sending to the NeuralProphet Machine Learning model: 
         
-    ``` daily ```. The app will automatically fill in all missing dates with a one-day interval. Any missing values in the ``` y ``` column will be replaced with a value of 0.
-    ``` weekly ```. The app will automatically fill in all missing dates with a one-day interval. Any missing values in the ``` y ``` column will be replaced with a value of 0. The data will be grouped on a weekly basis, from Monday to Sunday. The week will be marked by the date of Friday.
-- 
+    ``` daily ```. The app will automatically fill in all missing dates with a one-day interval. Any missing values in the ``` y ``` column will be replaced with a value of 0;
+    ``` weekly ```. The app will automatically fill in all missing dates with a one-day interval. Any missing values in the ``` y ``` column will be replaced with a value of 0. The data will be grouped on a weekly basis, from Monday to Sunday. The week will be marked by the date of Friday;
+
+- horizon. The 'horizon' parameter determines the number of periods for which the user wants to make a prediction. It should be an integer greater than 0. If it is set to 0, no predictions will be made for the future.
+
+#### Advanced parameters
